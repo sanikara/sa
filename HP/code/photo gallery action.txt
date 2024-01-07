@@ -1,0 +1,28 @@
+stop()
+
+btn1.addEventListener(MouseEvent.CLICK,play1);
+
+function play1(event:MouseEvent):void{
+ gotoAndStop("peacock");
+}
+
+btn2.addEventListener(MouseEvent.CLICK,play2);
+
+function play2(event:MouseEvent):void{
+ gotoAndStop("seal");
+ 
+}
+
+btn3.addEventListener(MouseEvent.CLICK,play3);
+
+function play3(event:MouseEvent):void{
+ gotoAndStop("horse");
+ 
+}
+
+btn4.addEventListener(MouseEvent.CLICK,play4);
+
+function play4(event:MouseEvent):void{
+ gotoAndStop("bird");
+ 
+}

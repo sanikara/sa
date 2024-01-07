@@ -1,0 +1,15 @@
+import flash.events.TimerEvent;
+var now:Date;
+var ct:Timer=new Timer(1000);
+ct.addEventListener(TimerEvent.TIMER,onTick);
+ct.start();
+function onTick(event:TimerEvent):void {
+	now = new Date();
+	var s:uint = now.getSeconds();
+	var m:uint = now.getMinutes();
+	var h:uint = now.getHours();
+	second_hand_mc.rotation = 180 + (s*6);
+	minute_hand_mc.rotation = 180 + (m*6);
+	hour_hand_mc.rotation = 180 + (h*30) + (m*.5) ;
+	
+}
